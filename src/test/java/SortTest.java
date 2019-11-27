@@ -20,8 +20,8 @@ public class SortTest {
         driver.get("http://testfasttrackit.info/selenium-test/");
 
         driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col1-layout > div > div > div.std > ul > li:nth-child(2) > a > img")).click();
-      //  Select sortByElement = new Select(driver.findElement(By.cssSelector(".category-products > .toolbar [title='Sort By']")));
-      //  sortByElement.selectByIndex(2);
+        Select sortByElement = new Select(driver.findElement(By.cssSelector(".category-products > .toolbar [title='Sort By']")));
+        sortByElement.selectByIndex(2);
 
 
     }
